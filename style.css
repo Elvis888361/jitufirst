@@ -1,0 +1,48 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding-left: 20px;
+}
+h1{
+    color: blue;
+}.skill{
+    text-align: center;
+}
+#angular{
+    color: rgb(221, 255, 128);
+    font-weight: bold;
+    font-size: 35px;
+}
+[href]{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 2rem;
+}
+button{
+    color: black;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.p{
+    color: aqua;
+}
+.edu{
+    font-style: italic;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.projects{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 30px 20px 15px 10px;
+    margin: 30px 800px 30px 200px;
+    float: right;
+    
+}
