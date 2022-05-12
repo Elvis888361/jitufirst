@@ -1,8 +1,10 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
 }
 body{
     padding-left: 20px;
+    background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
 }
 h1{
     color: blue;
@@ -23,13 +25,35 @@ button{
     color: black;
     padding: 1.5rem;
     font-size: 1.3rem;
-}
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+
+    }
+  }
 button:hover{
     background-color: black;
     color: white;
+    transform: scale(2.1);
 }
-.p{
-    color: aqua;
+p{
+    color: white;
+    line-height: 25px;
 }
 .edu{
     font-style: italic;
@@ -44,5 +68,44 @@ img{
     padding: 30px 20px 15px 10px;
     margin: 30px 800px 30px 200px;
     float: right;
-    
+    border-radius: 0px;
+    box-shadow: 25px 10px 10px 10px green;
+ 
 }
+footer{
+    padding: 0px;
+    color: white;
+    background: red;
+    text-align: center;
+  }
+  .balls {
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 60%;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #red {
+    background: red;
+    left: 25%;
+    animation-timing-function: linear;
+  }
+  #blue {
+    background: blue;
+    left: 50%;
+    animation-timing-function: ease-out;
+  }
+  #green {
+    background: green;
+    left: 75%;
+    animation-timing-function: cubic-bezier(0.69, 0.1, 1, 0.1);
+  }
+
+  @keyframes jump {
+    50% {
+      top: 10%;
+    }
+  }
